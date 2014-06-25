@@ -13,6 +13,48 @@ A basic starting point for building a JS app.
  - Checks and build are provided via Grunt
  - Application structure is provided via BackboneJS
 
+## Getting started
+
+1. Create a new repositiory in Github
+
+
+        git@github.com:{username}/{project_name}.git
+
+
+2. Bare clone this repository
+
+
+        git clone --bare git@github.com:alistairjcbrown/base-js-app.git
+
+
+3. Go into the cloned local copy
+
+
+        cd base-js-app.git
+
+
+4. Push copy to the newly created repositiory in Github
+
+
+        git push --mirror git@github.com:{username}/{project_name}.git
+
+
+5. Remove the local repository which was cloned from
+
+
+        cd ../
+        rm -rf base-js-app.git
+
+
+6. Clone the new repository
+
+
+        git clone git@github.com:{username}/{project_name}.git
+
+
+7. You should now have a new repository which contains source and history from the base repository
+
+
 ## Install
 
 To install the dependencies and run the build, you should have `bower` and `grunt` installed.
